@@ -1,0 +1,284 @@
+\documentclass[11pt,a4paper]{article}
+%\usepackage[latin1]{inputenc}   % Descomentar para compilar no windows
+\usepackage[utf8x]{inputenc}     % Comentar para compilar no windows
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{color}
+\usepackage{xspace}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{array,booktabs}
+\usepackage{proof}
+\usepackage{fancyhdr}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+%\usepackage[pdftex=true,pagebackref=true,bookmarks=true,bookmarksnumbered=true,pdffitwindow=true]{hyperref}
+\usepackage{hyperref}
+\usepackage{marginnote}
+%\usepackage[top=Bcm, bottom=Hcm, outer=Ccm, inner=Acm, heightrounded, marginparwidth=Ecm, marginparsep=Dcm]{geometry}
+\usepackage{comment}
+\usepackage{tkz-euclide}
+
+\newcounter{counterQuestoes}
+
+\renewcommand{\b}{\textbf}
+\newcommand{\noi}{\noindent}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\cis}[2]{{#1}\left(\cos {#2} + i \operatorname{sen} {#2} \right)}
+\newcommand{\diff}[2]{\dfrac{\partial #1}{\partial #2}}
+
+\setlength{\textwidth}{170mm}%
+\setlength{\textheight}{259mm}%
+\setlength{\topmargin}{-20mm}%
+%\setlength{\bottommargin}{}%
+\setlength{\oddsidemargin}{-10mm}
+\setlength{\evensidemargin}{-30mm}%
+
+\begin{document}
+\frenchspacing
+\begin{center}
+    \begin{minipage}{4cm}
+		\begin{center}
+			\includegraphics[width=4cm, height=2.0cm]{logoifb.jpeg}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{11.4cm}
+		\begin{center}
+				{\small \textsc{Instituto Federal de Brasília}			\\
+						  \textsc{Campus Samambaia}\\
+						  \textsc{3º ano - Ensino Médio Integrado} \\
+                         \textbf{Disciplina:} Matemática \hspace{.65cm}\textbf{Ano:} 2019\\
+                          \textsc{\textbf{Professor:} Bruno Xavier}\\
+                }
+		\end{center}
+	\end{minipage}
+	%\begin{minipage}{1.6cm}
+	%	\begin{center}
+	%		\includegraphics[width=2cm, height=1.1cm]{logoimd.png}
+	%	\end{center}
+	%\end{minipage}
+\end{center}
+
+
+{\sf
+  \begin{center}
+    \Large \textbf{--- Teste Objetivo - 1º bimestre ---}%
+  \end{center}
+}\bigskip
+
+\setlength{\marginparwidth}{5cm}
+\small \noindent \textbf{Nome:}\hspace{0.3cm}\hrulefill \hrulefill
+\hrulefill \hspace{0.1cm}
+\textbf{Turma:}\hspace{0.1cm}\rule{1cm}{.1mm} \textbf{Nota:}\hspace{0.1cm}\rule{1cm}{.1mm}\\*[0.1cm]
+%\small \noindent %\textbf{Nome:}\hspace{0.3cm}\hrulefill \hrulefill \hrulefill \hspace{0.1cm}
+
+
+\thispagestyle{empty}\bigskip
+
+%\noindent - {\bf Todas as resoluções devem incluir os cálculos e raciocínios usados para obter a solução.}
+
+%\noindent - {\bf A prova pode ser feita a lápis, no entanto, os resultados e respostas finais devem ser escritos com caneta esferográfica de tinta azul ou preta}
+
+\noindent - {\bf Não é permitido o uso de calculadora de qualquer natureza ou quaisquer outros aparelhos eletrônicos, sob pena de atribuir-se nota {\bf zero} à avaliação.}
+
+\noindent - {\bf Não é permitido o uso de qualquer material alheio à avaliação.}
+
+\noindent - {\bf Cada questão vale $1$ ponto, totalizando $10$ pontos.}
+%\noindent - Há um ponto extra distribuido na avaliação.
+
+%\noindent - Não é necessário grampear as avaliações.
+
+%\noindent - Escreva as respostas em apenas um lado de cada folha.
+%\noindent -  {\bf Mantenha as respostas em sequência.}
+
+\noindent -  {\bf No cabeçalho, \underline{escreva seu nome completo}.}
+
+%\noindent -  {\bf No rodapé direito, confira a ordem das folhas, e escreva \underline{``Página $n$ de $m$''}, para $n$ e $m \in \N$.}
+
+%\noindent -  {\bf Se for o caso, consideraremos valores já calculados em outras questões, basta indicar e justificar.}
+%Admita que $i^2 = -1$.
+\begin{enumerate}
+
+%qinicio
+\item Determine o valor de $k$, de modo que $z=\left(\dfrac{k}{2}-\dfrac{1}{2} \right) + i$ seja um número imaginário puro.
+
+\begin{enumerate}
+\item $-\dfrac{1}{2}$
+\item $-1$
+\item $0$
+\item $\dfrac{1}{2}$
+\item $1$
+\end{enumerate}
+%qfim
+
+%qinicio
+\item A expressão $i^{13} + i^{15}$ é igual a:
+
+\begin{enumerate}
+	\item $0$ %gabarito
+	\item $i$
+	\item $-i$
+	\item $-2i$
+	\item $3i$
+\end{enumerate}
+%qfim
+%qinicio
+\item O módulo de $z = \dfrac{1}{i^{36}}$ é:
+
+\begin{enumerate}
+	\item $3$
+	\item $1$ %gabarito
+	\item $2$
+	\item $\dfrac{1}{36}$
+	\item $36$
+\end{enumerate}
+%qfim
+%qinicio
+\item Se $(1+ai)(b-i) = 5+5i$, com $a,b \in \mathbb{R}$, então $a$ e $b$ são raízes da equação
+
+\begin{enumerate}
+	\item $x^2-x-6=0$
+	\item $x^2-5x-6=0$
+	\item $x^2+x-6=0$
+	\item $x^2+5x+6=0$
+	\item $x^2-5x+6=0$ %gabarito
+\end{enumerate}
+%qfim
+%qinicio
+\item Sejam $z_1$ e $z_2$ as soluções da equação $x^2+x+1=0$. Determine $z_1^2+z_2^2$:
+
+\begin{enumerate}
+	\item $1$
+	\item $-1$ %gabarito
+	\item $2$
+	\item $i$
+	\item $-i$
+\end{enumerate}
+%qfim
+%qinicio
+\item A figura mostra, no plano complexo, o círculo de centro na origem e raio $1$ e as imagens de cinco números complexos. O complexo $\dfrac{1}{z}$ é igual a:
+	\begin{center}
+	\begin{tikzpicture}
+		%\draw[help lines, color=gray!30, dashed] (-1.9,-1.9) grid (1.9,1.9);
+		\draw[->, thick] (-2,0)--(2,0) node[right]{$Re$};
+		\draw[->, thick] (0,-2)--(0,2) node[above]{$Im$};
+		\draw (0,0) circle (30pt);
+		\filldraw[black] (0.5,0.5) circle (1pt) node[below]{$z$};
+		\filldraw[black] (1.5,1.5) circle (1pt) node[right]{$w$};
+		\filldraw[black] (-1.5,1.5) circle (1pt) node[right]{$r$};
+		\filldraw[black] (-1.5,-1.5) circle (1pt) node[right]{$s$};
+		\filldraw[black] (1.5,-1.5) circle (1pt) node[right]{$t$};
+	\end{tikzpicture}
+	\end{center}
+
+\begin{enumerate}
+	\item $z$
+	\item $w$
+	\item $r$
+	\item $s$
+	\item $t$ %gabarito
+\end{enumerate}
+%qfim
+%qinicio
+\item Escrevendo o número complexo $z=\dfrac{1}{1-i} + \dfrac{1}{1+i}$ na forma algébrica, tem-se:
+
+\begin{enumerate}
+	\item $1-i$
+	\item $i-1$
+	\item $1+i$
+	\item $i$
+	\item $1$ %gabarito
+\end{enumerate}
+%qfim
+%qinicio
+\item Seja $z$ um número complexo de módulo $2$ e argumento $120°$. Nessas circunstâncias, o valor de $\overline{z}$ é:
+
+\begin{enumerate}
+	\item $2-2i\sqrt{3}$
+	\item $2+2i\sqrt{3}$
+	\item $-1-i\sqrt{3}$ %gabarito
+	\item $-1+i\sqrt{3}$
+	\item $1+i\sqrt{3}$
+\end{enumerate}
+%qfim
+%qinicio
+\item Seja $z=2+2i$. A forma trigonométrica de $z$ é:
+
+\begin{enumerate}
+	\item $\cis{2\sqrt{2}}{45°} $ %gabarito
+	\item $\cis{2\sqrt{2}}{315°} $
+	\item $\cis{4}{45°} $
+	\item $\cis{\sqrt{2}}{135°} $
+	\item $\cis{\sqrt{2}}{315°} $
+\end{enumerate}
+%qfim
+%qinicio
+\item O polígono $ABCDE$ da figura é um pentágono regular inscrito no círculo unitário de centro na origem do plano de Argand-Gauss.
+	\begin{center}
+	\usetikzlibrary{shapes.geometric}
+	\begin{tikzpicture}
+		%\draw[help lines, color=gray!30, dashed] (-1.9,-1.9) grid (1.9,1.9);
+		\draw[->, thick] (-2,0)--(2,0) node[right]{$Re$};
+		\draw[->, thick] (0,-2)--(0,2) node[above]{$Im$};
+		\draw (0,0) circle (40pt);
+		\node[regular polygon, regular polygon sides=5, draw, inner sep=23pt] (p) at (0,0) {};
+		\node[draw,shape=circle,fill=black, inner sep=2pt] (p1) at (p.corner 1);
+		\node[above right] at (p1) {$A$};
+		\node[draw,shape=circle,fill=black, inner sep=2pt] (p2) at (p.corner 2);
+		\node[left] at (p2) {$B$};
+		\node[draw,shape=circle,fill=black, inner sep=2pt] (p3) at (p.corner 3);
+		\node[below left] at (p3) {$C$};
+		\node[draw,shape=circle,fill=black, inner sep=2pt] (p4) at (p.corner 4);
+		\node[below right] at (p4) {$D$};
+		\node[draw,shape=circle,fill=black, inner sep=2pt] (p5) at (p.corner 5);
+		\node[right] at (p5) {$E$};
+	\end{tikzpicture}
+	\end{center}
+Nessas condições, o argumento do complexo de afixo $A$ é igual a:
+
+\begin{enumerate}
+	\item $36°$
+	\item $30°$
+	\item $28°$
+	\item $22°$
+	\item $18°$ %gabarito
+\end{enumerate}
+%qfim
+
+\iffalse{
+\item Classifique os números a seguir em imaginário ou real. Se for o caso, indique quando o número for imaginário puro.
+	\begin{enumerate}
+		\item $\pi i$
+		\item $i^{271828}-\overline{i}$
+	\end{enumerate}
+
+\item Sabendo que $z = \dfrac{\sqrt{3}}{2} + \dfrac{i}{2}$, marque, no plano de Argand-Gauss, os afixos dos números:
+	\begin{enumerate}
+		\item $z^3$
+		\item $z^{127}$
+	\end{enumerate}
+	\begin{center}
+	\begin{tikzpicture}
+		\draw[help lines, color=gray!30, dashed] (-1.9,-1.9) grid (1.9,1.9);
+		\draw[->, thick] (-2,0)--(2,0) node[right]{$Re$};
+		\draw[->, thick] (0,-2)--(0,2) node[above]{$Im$};
+	\end{tikzpicture}
+	\end{center}
+	
+\item Determine para quais valores de $x$ a expressão $\dfrac{3+i}{x-i}$ a seguir é um número real.
+	
+\item Determine as raízes sextas de $\sqrt{3} - i$.
+
+\item Dois números complexos $z$ e $w$ têm módulos iguais a $1$ e argumentos iguais a $35$° e $40$°, respectivamente. Determine os menores valores naturais de $m$ e $n$ para os quais se tem $z^m = w^n$.
+\end{enumerate}
+\clearpage
+\mbox{~}
+\clearpage
+\mbox{~} }\fi
+
+\end{enumerate}
+\end{document}
